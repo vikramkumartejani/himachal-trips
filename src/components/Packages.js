@@ -23,7 +23,7 @@ const Packages = () => {
     {
       title: "Shimla Manali 5N 6D Tour by Cab",
       price: "Start @ ₹ 6500 /-",
-      image: "/assests/g17.jpg",
+      image: "/assests/home-bg.jpg",
       nights: "5 Nights",
       days: "6 Days",
       person: "Per Person",

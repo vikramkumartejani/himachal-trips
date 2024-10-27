@@ -218,7 +218,7 @@ const Footer = () => {
           </div>
           <div className='footer-bottom'>
             <p>
-              © 2021 https://himachaltourguide.co.in. All rights reserved | Designed by <a href="#">https://himachaltourguide.co.in/</a>
+              © 2021 My Bharat Trips. All rights reserved | Designed by <a href="#">himachaltourguide.co.in</a>
             </p>
           </div>
         </div>

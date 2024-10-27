@@ -11,7 +11,7 @@ const Slider = dynamic(() => import("react-slick"), { ssr: false });
 const Review = () => {
   const reviewData = [
     {
-      profile: "/assests/profile.png",
+      profile: "/assests/akshay_profile.png",
       date: "12/08/2024 via Google",
       post: "I recently had the pleasure of booking a tour through Himachal Tourism, and the experience exceeded all my expectations.",
       rating: 5,
@@ -20,27 +20,27 @@ const Review = () => {
       profile: "/assests/profile.png",
       date: "15/09/2024 via TripAdvisor",
       post: "The service was excellent, and I would highly recommend it to anyone looking for a great experience.",
-      rating: 4,
+      rating: 5,
     },
     {
       profile: "/assests/profile.png",
       date: "15/09/2024 via TripAdvisor",
       post: "The service was excellent, and I would highly recommend it to anyone looking for a great experience.",
-      rating: 4,
+      rating: 5,
     },
     {
       profile: "/assests/profile.png",
       date: "15/09/2024 via TripAdvisor",
       post: "The service was excellent, and I would highly recommend it to anyone looking for a great experience.",
-      rating: 4,
+      rating: 5,
     },
     {
       profile: "/assests/profile.png",
       date: "15/09/2024 via TripAdvisor",
       post: "The service was excellent, and I would highly recommend it to anyone looking for a great experience.",
-      rating: 4,
+      rating: 5,
     },
-  
+
   ];
 
   const settings = {
