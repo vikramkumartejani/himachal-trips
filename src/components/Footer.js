@@ -179,7 +179,7 @@ const Footer = () => {
                   Featured
                 </h6>
                 <a href="#">
-                  <img src="/assests/g7.jpg" alt="" />
+                  <img src="/assests/himachal_1_pck.jpg" alt="" />
                   <p>
                     We Are Leading Travel consulting Agency
                   </p>

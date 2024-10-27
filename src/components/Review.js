@@ -11,7 +11,7 @@ const Slider = dynamic(() => import("react-slick"), { ssr: false });
 const Review = () => {
   const reviewData = [
     {
-      profile: "/assests/akshay_profile.png",
+      profile: "/assests/profile_review_5.png",
       date: "12/08/2024 via Google",
       post: "I recently had the pleasure of booking a tour through Himachal Tourism, and the experience exceeded all my expectations.",
       rating: 5,
