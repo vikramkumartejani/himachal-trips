@@ -1,0 +1,226 @@
+
+  
+  .thank-you-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    padding: 2rem;
+  }
+  
+  .thank-you-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 700px;
+    width: 100%;
+    transform: translateY(20px);
+    animation: slideUp 0.5s ease forwards;
+  }
+  
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .card-content {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .checkmark-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .checkmark {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  }
+  
+  .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    stroke-width: 3;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  }
+  
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .message {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .message p {
+    margin-bottom: 1rem;
+  }
+  
+  .home-button {
+    display: inline-block;
+    background-color: #ff8810;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .home-button:hover {
+    background-color: #ff8810;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 480px) {
+    .thank-you-card {
+      max-width: 100%;
+    }
+  
+    .card-content {
+      padding: 2rem 1.5rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .checkmark {
+      width: 60px;
+      height: 60px;
+    }
+     
+  .thank-you-container {
+    padding: 1rem;
+  }
+  }
+  
+  /* Additional styles for enhanced design */
+  
+  .thank-you-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .thank-you-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 80%);
+    transform: rotate(45deg);
+    pointer-events: none;
+  }
+  
+  .message {
+    position: relative;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message::before {
+    content: '"';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 4rem;
+    color: rgba(102, 126, 234, 0.2);
+    line-height: 1;
+  }
+  
+  .home-button {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .home-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.8s ease;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  }
+  
+  .home-button:hover::after {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(102, 126, 234, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
+    }
+  }
+  
+  .home-button {
+    animation: pulse 2s infinite;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .thank-you-card,
+    .checkmark__circle,
+    .checkmark__check,
+    .home-button,
+    .home-button::after {
+      animation: none;
+      transition: none;
+    }
+  }

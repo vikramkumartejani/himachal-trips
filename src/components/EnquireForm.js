@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { FaCheckCircle } from "react-icons/fa"
 import './../styles/EnquireForm.css'
@@ -11,11 +11,11 @@ export default function EnquireForm() {
   const formRef = useRef(null)
   const router = useRouter()
 
-  async function handleSubmit(event) {
+  const handleSubmit = useCallback(async (event) => {
     event.preventDefault()
     setFormStatus('submitting')
     setErrorMessage('')
-    
+
     if (!formRef.current) {
       setFormStatus('error')
       setErrorMessage('An unexpected error occurred. Please try again.')
@@ -50,64 +50,56 @@ export default function EnquireForm() {
         setFormStatus('success')
         formRef.current.reset()
 
-        // Send message to Telegram
-        const botToken = "7953446645:AAGMjGBx1cotqlXIWci7PraNNJZLS6nKgWk"
-        const chatId = "148013002"
+        // Redirect to thank you page immediately after form submission
+        router.push('/thankyou')
 
-        const telegramMessage = `
-        New Form Submission:
-        Name: ${object.fullName}
-        Email: ${object.email}
-        Phone: ${object.phone}
-        `
-
-        try {
-          const telegramResponse = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              chat_id: chatId,
-              text: telegramMessage,
-            }),
-          })
-
-          if (!telegramResponse.ok) {
-            throw new Error(`HTTP error! status: ${telegramResponse.status}`)
-          }
-
-          const telegramResult = await telegramResponse.json()
-          console.log("Telegram response:", telegramResult)
-
-          if (!telegramResult.ok) {
-            throw new Error("Telegram API returned an error")
-          }
-
-          router.push('/thankyou')
-        } catch (telegramError) {
-          console.error("Error sending message to Telegram:", telegramError)
-          setErrorMessage("Form submitted, but there was an error notifying our team. We'll get back to you soon.")
-        }
+        // Send message to Telegram asynchronously
+        sendTelegramNotification(object)
       } else {
-        console.error("Web3Forms submission error:", result)
-        setFormStatus('error')
-        setErrorMessage(result.message || "There was an error submitting the form. Please try again.")
+        throw new Error(result.message || "There was an error submitting the form. Please try again.")
       }
     } catch (error) {
       console.error("Error submitting form:", error)
       setFormStatus('error')
-      if (error instanceof TypeError && error.message === 'Failed to fetch') {
-        setErrorMessage("Network error. Please check your internet connection and try again.")
+      setErrorMessage(error.message)
+    }
+  }, [router])
+
+  const sendTelegramNotification = async (formData) => {
+    const botToken = "7953446645:AAGMjGBx1cotqlXIWci7PraNNJZLS6nKgWk"
+    const chatId = "148013002"
+
+    const telegramMessage = `
+    New Form Submission:
+    Name: ${formData.fullName}
+    Email: ${formData.email}
+    Phone: ${formData.phone}
+    `
+
+    try {
+      const telegramResponse = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: telegramMessage,
+        }),
+      })
+
+      if (!telegramResponse.ok) {
+        console.error(`Telegram HTTP error! status: ${telegramResponse.status}`)
       } else {
-        setErrorMessage(`An unexpected error occurred: ${error.message}`)
+        const telegramResult = await telegramResponse.json()
+        console.log("Telegram response:", telegramResult)
+
+        if (!telegramResult.ok) {
+          console.error("Telegram API returned an error")
+        }
       }
-    } finally {
-      // Clear status after 10 seconds
-      setTimeout(() => {
-        setFormStatus(null)
-        setErrorMessage('')
-      }, 10000)
+    } catch (telegramError) {
+      console.error("Error sending message to Telegram:", telegramError)
     }
   }
 
@@ -142,9 +134,15 @@ export default function EnquireForm() {
                 <div className='form-input'>
                   <input type="tel" name="phone" placeholder='Enter Your 10-digit Mobile No.' required />
                 </div>
-                <button type="submit" className='form-btn' disabled={formStatus === 'submitting'}>
-                  {formStatus === 'submitting' ? 'Submitting...' : 'SUBMIT'}
+                <button
+                  type="submit"
+                  className={`form-btn ${formStatus === 'submitting' ? 'submitting' : formStatus === 'submitted' ? 'submitted' : ''}`}
+                  disabled={formStatus === 'submitting'}
+                >
+                  {formStatus === 'submitting' ? 'Submitting...' : formStatus === 'submitted' ? 'Submitted' : 'SUBMIT'}
                 </button>
+
+
               </form>
               {formStatus === 'success' && (
                 <p className="success-message">Form submitted successfully!</p>

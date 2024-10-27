@@ -18,7 +18,7 @@ export default function Home() {
   useEffect(() => {
     timeoutId = setTimeout(() => {
       setShowModal(true);
-    }, 10000);  
+    }, 5000);  
 
     return () => clearTimeout(timeoutId);
   }, []);
@@ -28,7 +28,7 @@ export default function Home() {
 
     timeoutId = setTimeout(() => {
       setShowModal(true);
-    }, 600000); 
+    }, 300000); 
   };
   return (
    <>

@@ -1,31 +1,111 @@
 "use client"
-import React from 'react'
+import React, { useState, useRef, useCallback } from 'react'
 import './../styles/Footer.css'
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { AiOutlinePhone } from 'react-icons/ai';
 
 const Footer = () => {
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
   const handleClick = () => {
-    const whatsappNumber = '+917836098136'; // Replace with your desired WhatsApp number
-
-    // Open WhatsApp with the specific number
+    const whatsappNumber = '+917836098136';
     window.open(`https://wa.me/${whatsappNumber}`, '_blank');
   };
 
   const handleClickCall = () => {
-    const phoneNumber = '+917836098136'; // Replace with your desired phone number
-
-    // Open the phone dialer with the specific number
+    const phoneNumber = '+917836098136';
     window.open(`tel:${phoneNumber}`);
   };
+
+  const [formStatus, setFormStatus] = useState(null)
+  const [errorMessage, setErrorMessage] = useState('')
+  const [phone, setPhone] = useState('')
+  const formRef = useRef(null)
+
+  const handleFooterSubmit = useCallback(async (event) => {
+    event.preventDefault()
+    setFormStatus('submitting')
+    setErrorMessage('')
+
+    if (!phone.match(/^\d{10}$/)) {
+      setFormStatus('error')
+      setErrorMessage('Please enter a valid 10-digit phone number.')
+      return
+    }
+
+    const formData = new FormData()
+    formData.append("phone", phone)
+    formData.append("access_key", "652de30f-937e-4626-9dbd-e62c44ee6254")
+
+    const object = Object.fromEntries(formData)
+    const json = JSON.stringify(object)
+
+    try {
+      const emailResponse = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      })
+
+      if (!emailResponse.ok) {
+        throw new Error(`HTTP error! status: ${emailResponse.status}`)
+      }
+
+      const result = await emailResponse.json()
+
+      if (result.success) {
+        console.log("Web3Forms submission result:", result)
+        setFormStatus('success')
+        setPhone('') // Clear the input
+
+        // Send message to Telegram asynchronously
+        sendTelegramNotification(object)
+      } else {
+        throw new Error(result.message || "There was an error submitting the form. Please try again.")
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      setFormStatus('error')
+      setErrorMessage(error.message)
+    }
+  }, [phone])
+
+  const sendTelegramNotification = async (formData) => {
+    const botToken = "7953446645:AAGMjGBx1cotqlXIWci7PraNNJZLS6nKgWk"
+    const chatId = "148013002"
+    const telegramMessage = `
+    New Form Submission:
+    Phone: ${formData.phone}
+    `
+
+    try {
+      const telegramResponse = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: telegramMessage,
+        }),
+      })
+
+      if (!telegramResponse.ok) {
+        console.error(`Telegram HTTP error! status: ${telegramResponse.status}`)
+      } else {
+        const telegramResult = await telegramResponse.json()
+        console.log("Telegram response:", telegramResult)
+
+        if (!telegramResult.ok) {
+          console.error("Telegram API returned an error")
+        }
+      }
+    } catch (telegramError) {
+      console.error("Error sending message to Telegram:", telegramError)
+    }
+  }
 
   return (
     <div>
@@ -35,11 +115,22 @@ const Footer = () => {
             <div className='text'>
               <h4>Get a Call Back</h4>
             </div>
-            <div className='input'>
-              <input type="text" name="" id="" placeholder='Enter your phone' />
-              <button>
-                Submit
-              </button>
+            <div>
+              <div className='input'>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder='Enter Your 10-digit Mobile No.'
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  required
+                />
+                <button onClick={handleFooterSubmit}>
+                  Submit
+                </button>
+              </div>
+              {formStatus === 'success' && <p className="success-message">Phone number submitted successfully!</p>}
+              {formStatus === 'error' && <p className="error-message">{errorMessage}</p>}
             </div>
           </div>
         </div>
@@ -132,13 +223,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       <button className='go-to-top' onClick={handleClickCall}>
-      <AiOutlinePhone size={20} />  
-    </button>
+        <AiOutlinePhone size={20} />
+      </button>
       <button className='whatsapp' onClick={handleClick}>
-      <AiOutlineWhatsApp size={20} /> 
-    </button>
+        <AiOutlineWhatsApp size={20} />
+      </button>
     </div>
   );
 };
