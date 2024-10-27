@@ -39,6 +39,39 @@ const reviews = [
 ];
 
 const Review = () => {
+  const reviewData = [
+    {
+      profile: "/assests/profile_review_5.png",
+      date: "12/08/2024 via Google",
+      post: "I recently had the pleasure of booking a tour through Himachal Tourism, and the experience exceeded all my expectations.",
+      rating: 5,
+    },
+    {
+      profile: "/assests/review_img_1.png",
+      date: "15/09/2024 via TripAdvisor",
+      post: "The service was excellent, and I would highly recommend it to anyone looking for a great experience.",
+      rating: 5,
+    },
+    {
+      profile: "/assests/review_img_2.png",
+      date: "15/09/2024 via TripAdvisor",
+      post: "The service was excellent, and I would highly recommend it to anyone looking for a great experience.",
+      rating: 5,
+    },
+    {
+      profile: "/assests/review_img_3.png",
+      date: "15/09/2024 via TripAdvisor",
+      post: "The service was excellent, and I would highly recommend it to anyone looking for a great experience.",
+      rating: 5,
+    },
+    {
+      profile: "/assests/review_img_4.png",
+      date: "15/09/2024 via TripAdvisor",
+      post: "The service was excellent, and I would highly recommend it to anyone looking for a great experience.",
+      rating: 5,
+    },
+
+  ];
 
   const settings = {
     infinite: true,

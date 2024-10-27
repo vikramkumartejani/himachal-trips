@@ -6,32 +6,32 @@ const Locations = () => {
     {
       title: "Shimla",
       post: "2 Listings",
-      image: "/assests/g1.jpg",
+      image: "/assests/shimla_pck.jpg",
     },
     {
       title: "Manali",
       post: "2 Listings",
-      image: "/assests/g2.jpg",
+      image: "/assests/manali_lct.jpg",
     },
     {
       title: "Amritsar",
       post: "2 Listings",
-      image: "/assests/g3.jpg",
+      image: "/assests/golden_temple_pck.png",
     },
     {
       title: "Dharamshala",
       post: "2 Listings",
-      image: "/assests/g4.jpg",
+      image: "/assests/dharamshala_lck.jpg",
     },
     {
       title: "Khajjiar",
       post: "2 Listings",
-      image: "/assests/g5.jpg",
+      image: "/assests/kaza_lct.jpg",
     },
     {
       title: "Kullu",
       post: "2 Listings",
-      image: "/assests/g6.jpg",
+      image: "/assests/kullu_lck.jpg",
     },
   ];
   return (
@@ -41,10 +41,9 @@ const Locations = () => {
           <div className="location-heading">
             <h3>Popular Locations</h3>
             <p>
-              Are you dreaming of the perfect vacation at Himachal Pradesh but
-              have no idea where to start planning? Clueless about costs? And
-              not sure what to do once you get there? Let us plan your trip for
-              you.
+              Want the perfect vacation in Himachal Pradesh but
+              don&apos;t know where to start?
+              Let us plan your trip for you!
             </p>
           </div>
           <div className="box-row">

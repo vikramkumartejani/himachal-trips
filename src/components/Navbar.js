@@ -21,7 +21,7 @@ const Navbar = () => {
                     <div className='follow'>
                         <li>Follow Us</li>
                         <li>
-                            <a href="https://www.facebook.com/mybharattrips/" className='follow-icons'>
+                            <a href="https://www.facebook.com/tr?id=1255410015588930&ev=PageView&noscript=1" className='follow-icons'>
                                 <span className=''>
                                     <FaFacebookF color='white' />
                                 </span>
@@ -39,7 +39,7 @@ const Navbar = () => {
                         <li>
                             <span className='fa mobile'>
                                 <FaMobileScreen color='white' className='mobile-icon' />
-                                <a href="tel:+91 7018398641" style={{ color: 'white' }}>+91 70183 98641</a>
+                                <a href="tel:+91 7836098136" style={{ color: 'white' }}>+91 78360 98136</a>
                             </span>
                         </li>
                         <li>
@@ -103,4 +103,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

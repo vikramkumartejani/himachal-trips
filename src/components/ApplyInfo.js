@@ -8,22 +8,22 @@ const ApplyInfo = () => {
         {
             image: <FaUniversity/>,
             title: "Maximum Choices",
-            post: '100% Customized Tour Quotes for Himachal Tourism Holiday Packages.'
+            post: 'Receive 100% customized tour quotes for holiday packages in Himachal Pradesh.'
         },
         {
             image: <FaBath/>,
             title: "Clients Trust Us",
-            post: 'We tend to build complete confidence and firm reliance on the integrity of our service.'
+            post: 'We aim to build strong trust in the reliability of our services.'
         },
         {
             image: <FaCubes/>,
             title: "Referrals",
-            post: 'We are always recommended by our clients'
+            post: 'Our clients consistently recommend us.'
         },
         {
             image: <FaHospital/>,
             title: "Expert Guidance",
-            post: 'Provide maximum details so that we can provide you best package within your budget'
+            post: 'Please provide as many details as possible so we can offer you the best package that fits your budget.'
         },
     ]
   return (
@@ -33,7 +33,7 @@ const ApplyInfo = () => {
             <div className="apply-info-heading">
                 <h3>What Makes Us The Preferred Choice</h3>
                 <p>
-                    We specialize in all type of tour packages and hotel booking. We are accompanying with a large variety of hotels, car rentals to provide our clients with the best deals in the market. It’s about using our expert knowledge of holiday destinations and our network of friends across the world to make sure reality exceeds your expectations
+                We offer a variety of tour packages and hotel booking services. With access to a diverse selection of hotels and car rentals, we ensure our clients receive the best deals in the market. Leveraging our expertise in holiday destinations and our extensive network, we strive to exceed your expectations
                 </p>
             </div>
             <div className="apply-info-row">
@@ -59,10 +59,10 @@ const ApplyInfo = () => {
                     <div className="col-2-data">
                         <h4>What Makes Us </h4>
                         <p>
-                        Himachal-Tourism.Org.In is a full-service travel management company based in India. We are committed to our values of innovation, safety, professionalism, pride and fun as we strive to exceed our customers expectations. 
+                        My Bharat Trips is a comprehensive travel management company located in India. We are committed to our core values of innovation, safety, professionalism, pride, and enjoyment as we strive to surpass our customer&apos;s expectations.
                         </p>
                         <p>
-                        Professionalism: We are committed to conducting ourselves to high standards, with respect, in an honest, kind and fair manner. Pride: We are proud of where we are from, where we go and who we are. We demonstrate pride in everything we do, while we support our community and our country.
+                        Professionalism: We are dedicated to upholding high standards in our conduct, treating others with respect, honesty, kindness, and fairness.Pride: We take pride in our origins, our journeys, and our identity. We express this pride in everything we do while actively supporting our community and our country.
                         </p>
                     </div>
                 </div>

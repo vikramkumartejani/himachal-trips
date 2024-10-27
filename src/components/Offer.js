@@ -15,17 +15,17 @@ const Offer = () => {
         {
             image: <FaLaptop />,
             title: 'Customization',
-            post: '100% Customized Tour Quotes for Himachal Tourism Holiday Packages'
+            post: 'Receive fully customized tour quotes for holiday packages in Himachal Pradesh.'
         },
         {
             image: <FaDatabase />,
             title: 'Knowledgeable Guidance',
-            post: 'Simply fill the form & let our tour advisor contact you & provide you best deal.'
+            post: 'Just fill out the form, and our tour advisor will reach out to offer you the best deal.'
         },
         {
             image: <FaLock />,
             title: 'Best Deals',
-            post: 'Provide maximum details so that we can provide you best package within your budget.'
+            post: 'Please share as many details as possible so we can offer you the best package that fits your budget.'
         },
         {
             image: <FaCodepen />,
@@ -43,14 +43,14 @@ const Offer = () => {
                             What We Offer
                         </h3>
                         <p>
-                            Get customized plans and personal guidance from our experts 24 ×7.
+                            Receive customized plans and personalized guidance from our experts, available 24/7.
                         </p>
                     </div>
                     <div className="offer-row">
                         <div className="offer-col-1">
-                            <h4>We’re Offering Unmatched Services</h4>
-                            <p>Himachal-Tourism.Org.In is a full-service travel management company based in India. We are committed to our values of innovation, safety, professionalism, pride and fun as we strive to exceed our customers expectations. Professionalism: We are committed to conducting ourselves to high standards, with respect, in an honest, kind and fair manner.</p>
-                            <p>Pride: We are proud of where we are from, where we go and who we are. We demonstrate pride in everything we do, while we support our community and our country.</p>
+                            <h4>We&apos;re Offering Unmatched Services</h4>
+                            <p>My Bharat Trips is a comprehensive travel management company based in India. We are dedicated to our core values of innovation, safety, professionalism, pride, and enjoyment, all aimed at exceeding our customer&apos;s expectationsProfessionalism: We are committed to conducting ourselves to high standards, with respect, in an honest, kind and fair manner.</p>
+                            <p>Pride: We take pride in our origins, our journeys, and our identity. We express this pride in all our endeavors while actively supporting our community and country.</p>
                             <div className='offer-stats' ref={ref}>
                                 <div className='stats'>
                                     <h4>{inView ? <CountUp end={2300} duration={2} /> : 0}</h4>

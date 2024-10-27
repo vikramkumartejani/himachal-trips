@@ -108,7 +108,7 @@ export default function EnquireForm() {
       <div className='form-main'>
         <div className='form-container'>
           <div className='form-info'>
-            <h3>Himachal Trips</h3>
+            <h3>My Bharat Trips</h3>
             <p>Tourism is a social, cultural and economic phenomenon which entails the movement of people to countries or places outside their usual environment for personal or business/professional purposes. <br />Tourism generates income and creates training opportunities and easily accessible jobs, as well as sales markets for services and local products.</p>
           </div>
           <div className='main-form-container'>
@@ -118,11 +118,11 @@ export default function EnquireForm() {
               </h3>
               <p>
                 <i className='check-icon'><FaCheckCircle color='#ff8810' /></i>
-                100% Customized Tour Quotes for Himachal Tourism Holiday Packages
+                Get 100% customized tour quotes for holiday packages in Himachal Pradesh.
               </p>
               <p>
                 <i className='check-icon'><FaCheckCircle color='#ff8810' /></i>
-                Simply fill the form & let our tour advisor contact you & provide you best deal
+                Just fill out the form, and our tour advisor will get in touch to offer you the best deal.
               </p>
               <form onSubmit={handleSubmit} ref={formRef}>
                 <div className='form-input'>
