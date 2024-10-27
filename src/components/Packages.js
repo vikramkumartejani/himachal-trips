@@ -31,7 +31,7 @@ const Packages = () => {
     {
       title: "Complete Himachal 8N 9D Tour by Cab",
       price: "Start @ ₹ 16777 /-",
-      image: "/assests/golden_temple_pck.jpg",
+      image: "/assests/golden_temple_pck.png",
       nights: "8 Nights",
       days: "9 Days",
       person: "Per Person",
@@ -55,7 +55,7 @@ const Packages = () => {
     {
       title: "Shimla Manali Dharamshala Dalhousie 8N 9D with cab",
       price: "Start @ ₹ 14,999 /-",
-      image: "/himachal_3_pck.jpg",
+      image: "/assests/himachal_3_pck.jpg",
       nights: "8 Nights",
       days: "9 Days",
       person: "Per Person",

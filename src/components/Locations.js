@@ -16,7 +16,7 @@ const Locations = () => {
     {
       title: "Amritsar",
       post: "2 Listings",
-      image: "/assests/golden-temple-1.jpg",
+      image: "/assests/golden_temple_pck.jpg",
     },
     {
       title: "Dharamshala",
@@ -31,7 +31,7 @@ const Locations = () => {
     {
       title: "Kullu",
       post: "2 Listings",
-      image: "/assests/kaza.jpg",
+      image: "/assests/kullu_lck.jpg",
     },
   ];
   return (
