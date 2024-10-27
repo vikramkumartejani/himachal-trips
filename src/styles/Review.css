@@ -2,7 +2,7 @@
 
 .review-main {
   padding-top: 3rem !important;
-  padding-bottom:0rem !important;
+  padding-bottom: 3rem !important;
   background-color: #fff;
 }
 
@@ -40,44 +40,73 @@
   margin-bottom: 3rem !important;
   padding: 0 15px;
 }
-
-.review-content {
-  background-color: #2f5292;
-  color: white;
-  border-radius: 10px;
+.stars {
+  font-size: 20px;
+}
+.slick-slide {
+  padding: 0 8px;
+}
+.review-card {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0 10px; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  margin: 0px;
+  height: 300px;
 }
 
-.review-content img {
-  width: 60px; 
-  height: 60px;
+.review-image {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  margin-bottom: 10px;
   display: block;
   margin: 0 auto 10px;
 }
 
-.star-icon {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  color: #fcf808;
-}
-.review-content p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 24px;
+.stars {
+  color: #FFD700;
+  margin-bottom: 10px;
 }
 
-.slick-slider {
-  overflow: visible;
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+  display: none !important;
 }
 
-.slick-dots {
-  bottom: -25px; 
+.custom-arrow {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0.5px solid #dfdada;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+  
 }
 
+.next-arrow {
+  right: -10px;
+}
+
+.prev-arrow {
+  left: -10px;
+}
+
+.review-card h3 {
+  font-size: 18px;
+}
+
+.review-card p {
+  font-size: 15px;
+}
 @media screen and (max-width: 1024px) {
   .review-container {
     margin: 0px auto;
@@ -88,8 +117,15 @@
 }
 
 @media screen and (max-width: 600px) {
-  .review-content {
+  .review-card {
     padding: 15px 10px;
+  }
+  .review-card h3 {
+    font-size: 15px;
+  }
+
+  .review-card p {
+    font-size: 14px;
   }
 
   .review-heading h3 {
@@ -98,9 +134,5 @@
 
   .review-heading p {
     font-size: 16px;
-  }
-  .review-main {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
   }
 }

@@ -159,6 +159,18 @@
   color: #ccc;
 }
 
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.14);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .go-to-top {
   position: fixed;
   bottom: 15px;
@@ -177,7 +189,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: buttonHover 3s infinite; /* Continuous animation */
 }
+
 .whatsapp {
   position: fixed;
   bottom: 60px;
@@ -196,7 +210,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: buttonHover 3s infinite; /* Continuous animation */
 }
+
 
 @media screen and (max-width: 1140px) {
   .input input {

@@ -153,7 +153,7 @@
 /* Animated Pulse Effect for Social Icons */
 .follow-icons span {
   display: inline-block;
-  animation: pulse 1.5s infinite;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -162,6 +162,6 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
 }
