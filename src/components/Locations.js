@@ -16,7 +16,7 @@ const Locations = () => {
     {
       title: "Amritsar",
       post: "2 Listings",
-      image: "/assests/golden_temple_pck.jpg",
+      image: "/assests/golden_temple_pck.png",
     },
     {
       title: "Dharamshala",
