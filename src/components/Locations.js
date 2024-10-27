@@ -42,7 +42,7 @@ const Locations = () => {
             <h3>Popular Locations</h3>
             <p>
               Want the perfect vacation in Himachal Pradesh but
-              don’t know where to start?
+              don&apos;t know where to start?
               Let us plan your trip for you!
             </p>
           </div>

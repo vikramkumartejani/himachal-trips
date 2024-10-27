@@ -48,8 +48,8 @@ const Offer = () => {
                     </div>
                     <div className="offer-row">
                         <div className="offer-col-1">
-                            <h4>We’re Offering Unmatched Services</h4>
-                            <p>My Bharat Trips is a comprehensive travel management company based in India. We are dedicated to our core values of innovation, safety, professionalism, pride, and enjoyment, all aimed at exceeding our customers' expectationsProfessionalism: We are committed to conducting ourselves to high standards, with respect, in an honest, kind and fair manner.</p>
+                            <h4>We&apos;re Offering Unmatched Services</h4>
+                            <p>My Bharat Trips is a comprehensive travel management company based in India. We are dedicated to our core values of innovation, safety, professionalism, pride, and enjoyment, all aimed at exceeding our customer&apos;s expectationsProfessionalism: We are committed to conducting ourselves to high standards, with respect, in an honest, kind and fair manner.</p>
                             <p>Pride: We take pride in our origins, our journeys, and our identity. We express this pride in all our endeavors while actively supporting our community and country.</p>
                             <div className='offer-stats' ref={ref}>
                                 <div className='stats'>

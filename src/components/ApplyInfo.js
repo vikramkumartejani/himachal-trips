@@ -59,7 +59,7 @@ const ApplyInfo = () => {
                     <div className="col-2-data">
                         <h4>What Makes Us </h4>
                         <p>
-                        My Bharat Trips is a comprehensive travel management company located in India. We are committed to our core values of innovation, safety, professionalism, pride, and enjoyment as we strive to surpass our customers' expectations.
+                        My Bharat Trips is a comprehensive travel management company located in India. We are committed to our core values of innovation, safety, professionalism, pride, and enjoyment as we strive to surpass our customer&apos;s expectations.
                         </p>
                         <p>
                         Professionalism: We are dedicated to upholding high standards in our conduct, treating others with respect, honesty, kindness, and fairness.Pride: We take pride in our origins, our journeys, and our identity. We express this pride in everything we do while actively supporting our community and our country.
