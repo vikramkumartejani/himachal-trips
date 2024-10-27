@@ -6,12 +6,12 @@ const Locations = () => {
     {
       title: "Shimla",
       post: "2 Listings",
-      image: "/assests/shimla.jpg",
+      image: "/assests/shimla_pck.jpg",
     },
     {
       title: "Manali",
       post: "2 Listings",
-      image: "/assests/manali-2.jpg",
+      image: "/assests/manali_lct.jpg",
     },
     {
       title: "Amritsar",
@@ -21,12 +21,12 @@ const Locations = () => {
     {
       title: "Dharamshala",
       post: "2 Listings",
-      image: "/assests/dharamshala.jpg",
+      image: "/assests/dharamshala_lck.jpg",
     },
     {
       title: "Khajjiar",
       post: "2 Listings",
-      image: "/assests/chamba.jpg",
+      image: "/assests/kaza_lct.jpg",
     },
     {
       title: "Kullu",
