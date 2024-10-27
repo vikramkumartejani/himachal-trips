@@ -48,7 +48,7 @@ const Specification = () => {
                     We Are Here For You
                 </h3>
                 <p>
-                  We have proudly been voted the #1 travel company in the area for the past twenty-five years for hospitality, services &amp; Transport. We offer personalized attention to the leisure and business traveller and will do our best to tend to your needs.
+                We have been honored as the top travel company in the region for twenty-five years, known for our exceptional hospitality, services, and transportation. Our focus is on offering tailored support to leisure and business travelers, ensuring we address all your requirements.
                 </p>
             </div>
             <div className="specification-row">
@@ -58,7 +58,7 @@ const Specification = () => {
                   </span>
                   <h3>
                     {isVisible && (
-                      <CountUp start={0} end={targets.destinations} duration={4} /> 
+                      <CountUp start={0} end={targets.destinations} duration={4} />
                     )}
                     +
                   </h3>
@@ -70,7 +70,7 @@ const Specification = () => {
                   </span>
                   <h3>
                     {isVisible && (
-                      <CountUp start={0} end={targets.agents} duration={4} /> 
+                      <CountUp start={0} end={targets.agents} duration={4} />
                     )}
                     +
                   </h3>
@@ -82,7 +82,7 @@ const Specification = () => {
                   </span>
                   <h3>
                     {isVisible && (
-                      <CountUp start={0} end={targets.packages} duration={4} /> 
+                      <CountUp start={0} end={targets.packages} duration={4} />
                     )}
                     +
                   </h3>
@@ -94,7 +94,7 @@ const Specification = () => {
                   </span>
                   <h3>
                     {isVisible && (
-                      <CountUp start={0} end={targets.hotels} duration={4} /> 
+                      <CountUp start={0} end={targets.hotels} duration={4} />
                     )}
                     +
                   </h3>

@@ -141,7 +141,7 @@ const Footer = () => {
                 About Us
               </h6>
               <p>
-                We have proudly been voted the #1 travel company in the area for the past twenty-five years for hospitality, services &amp; Transport. We offer personalized attention to the leisure and business traveller and will do our best to tend to your needs.
+              We are honored to have been recognized as the #1 travel company in the area for the past twenty-five years, renowned for our exceptional hospitality, services, and transportation. Our commitment is to provide personalized attention to both leisure and business travelers, ensuring that all your needs are met.
               </p>
               <div className='social'>
                 <h6 className='title'>
@@ -181,7 +181,7 @@ const Footer = () => {
                 <a href="#">
                   <img src="/assests/g7.jpg" alt="" />
                   <p>
-                    We Are Leading Travel Consultiing Agency
+                    We Are Leading Travel consulting Agency
                   </p>
                 </a>
                 <a href="#">
@@ -204,21 +204,21 @@ const Footer = () => {
               </h6>
               <p>
                 <b>Address: </b>
-                Verma Niwas 2 Police Station, below BCS, Shimla, 171009
+                Near stop, Kelti, Himachal Pradesh Pin-code:171003
               </p>
               <p>
                 <b>Hours: </b>
-                Everyday, 10am–7pm
+                Everyday, 10am–11pm
               </p>
               <p>
                 <b>Phone: </b>
-                07018398641
+                07836098136
               </p>
             </div>
           </div>
           <div className='footer-bottom'>
             <p>
-              © 2021 Himachal-Tourism.Org.In. All rights reserved | Designed by <a href="#">Himachal-Tourism.Org.In</a>
+              © 2021 https://himachaltourguide.co.in. All rights reserved | Designed by <a href="#">https://himachaltourguide.co.in/</a>
             </p>
           </div>
         </div>
