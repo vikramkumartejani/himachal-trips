@@ -8,12 +8,12 @@ const EnquiryModel = ({ closeModal }) => {
     <div className='modal-main-container'>
       <div className='modal-background'>
         <div className='modal-container'>
-          <Image src='/assests/modal-image.png' alt='t' width={300} height={180} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }} />
+          <Image src='/assests/offer_img.png' alt='t' width={300} height={180} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }} />
 
           <div className='modal-body'>
             <div className='modal-header'>
               <h4>
-                Enquire Now for Free!
+                Save upto 30% winter season & summer vacations.  Request a call back.
               </h4>
             </div>
             <form style={{ width: '100%' }} >
