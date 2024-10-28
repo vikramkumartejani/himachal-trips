@@ -11,32 +11,39 @@ import { FcGoogle } from "react-icons/fc";
 
 const reviews = [
   {
-    name: "Elizabeth Senter",
+    name: "Rahul Thakur",
     review:
-      "They serve Counter Culture coffee and make really great chai! They have pastries but no bagels and some other items.",
+      "Just returned from an amazing tour of Himachal with Rishi Dadwal. The hotels were fabulous, and the attention to detail was impressive. Each place we visited was more beautiful than the last. The customer service was excellent. I highly recommend this package for anyone wanting to explore this stunning region.",
     rating: 5,
-    image: "/assests/profile.png",
+    image: "/assests/profile_review_5.png",
   },
   {
-    name: "Anna Laskowska",
+    name: "Sakshi sharma",
     review:
-      "Yummy coffee and friendly staff. Multiple counter culture roasts available.",
+      "I recently went on a tour to Himachal with Shruti Thakur, visiting Manali, Shimla, and Dharamshala. It was absolutely fantastic The hotels were top-quality, providing comfort at every stop. The views in Manali were breathtaking. I highly recommend this tour package to everyone.",
     rating: 5,
-    image: "/assests/profile.png",
+    image: "/assests/review_img_1.png",
   },
   {
-    name: "Anupul Chaudhary",
+    name: "Shruti Kumari",
     review:
-      "It is a nice place for a quick coffee or a snack. Located beside the Heath Science Library on South Columbia street, this place provides th...",
-    rating: 4,
-    image: "/assests/profile.png",
+      "What an incredible experience exploring Himachal The tour was well organized, with great hotels and excellent customer service. The sights were stunning, especially in Manali.",
+    rating: 5,
+    image: "/assests/review_img_2.png",
   },
   {
-    name: "James Taylor",
+    name: "Shruti Kumari",
     review:
-      "The service was great, location is wonderful, but we were disappointed in the selection of small sweets and baked items available.",
-    rating: 4,
-    image: "/assests/profile.png",
+      "Our Himachal tour was breathtaking The hotels were lovely, and the service was top-notch. The views in Shimla and Dharamshala were unforgettable. I recommend this tour package for anyone who wants to experience the beauty of Himachal comfortably.",
+    rating: 5,
+    image: "/assests/review_img_3.png",
+  },
+  {
+    name: "Abhimanyu Kumar",
+    review:
+      "Just got back from an amazing trip to Himachal The hotels were fantastic, and the sights were spectacular. The customer service was great, making us feel appreciated throughout the trip. I highly recommend this tour package for anyone wanting a memorable experience.",
+    rating: 5,
+    image: "/assests/review_img_4.png",
   },
 ];
 
