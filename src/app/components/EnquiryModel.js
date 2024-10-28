@@ -8,7 +8,7 @@ const EnquiryModel = ({ closeModal }) => {
     <div className='modal-main-container'>
       <div className='modal-background'>
         <div className='modal-container'>
-          <Image src='/assests/offer_img.png' alt='t' width={300} height={180} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }} />
+          <Image src='/assests/modal-image.png' alt='t' width={300} height={180} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }} />
 
           <div className='modal-body'>
             <div className='modal-header'>
