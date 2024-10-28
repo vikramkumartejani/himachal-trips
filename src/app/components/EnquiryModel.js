@@ -12,14 +12,8 @@ const EnquiryModel = ({ closeModal }) => {
 
           <div className='modal-body'>
             <div className='modal-header'>
-            <h4 style={{ fontSize: '24px', fontWeight: 'bold', color: '#007bff' }}>
-                Save up to 30% this Winter Season & Summer Vacation!
-            </h4>
-            <p style={{ fontSize: '16px', color: '#555', marginTop: '10px' }}>
-                Please fill out the form below, and our travel consultant will reach out to you shortly to assist with your query.
-            </p>
-            {/* <h4>Save up to 30% this Winter Season & Summer Vacation!</h4> */}
-            {/* <p>Simply fill the form below and let our travel consultant contact you to resolve your query.</p> */}
+            <h4>Save up to 30% this Winter Season & Summer Vacation!</h4>
+            <p>Simply fill the form below and let our travel consultant contact you to resolve your query.</p>
             </div>
             <form style={{ width: '100%' }} >
               <div className='modal-input'>
