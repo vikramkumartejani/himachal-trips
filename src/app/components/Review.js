@@ -11,35 +11,35 @@ import { FcGoogle } from "react-icons/fc";
 
 const reviews = [
   {
-    name: "Rahul Thakur",
+    name: "Pradip Katgar",
     review:
       "Just returned from an amazing tour of Himachal with Rishi Dadwal. Fabulous hotels and impressive service. Each place was beautiful. Highly recommend this stunning package.",
     rating: 5,
     image: "/assests/profile_review_5.png",
   },
   {
-    name: "Sakshi sharma",
+    name: "Anchal Patil",
     review:
       "Just back from an amazing trip to Himachal. The hotels were fantastic, and the sights were spectacular. Great customer service. Highly recommend for a memorable experience.",
     rating: 5,
     image: "/assests/review_img_1.png",
   },
   {
-    name: "Shruti Kumari",
+    name: "Chetan Chaudhary ",
     review:
       "I recently toured Himachal with Shruti Thakur, visiting Manali, Shimla, and Dharamshala. Fantastic hotels and breathtaking views. Highly recommend this tour package.",
     rating: 5,
     image: "/assests/review_img_2.png",
   },
   {
-    name: "Shruti Kumari",
+    name: "Sudama patel",
     review:
       "Our Himachal tour was breathtaking. Lovely hotels and top-notch service. The views in Shimla and Dharamshala were unforgettable. Recommended for a comfortable experience.",
     rating: 5,
     image: "/assests/review_img_3.png",
   },
   {
-    name: "Abhimanyu Kumar",
+    name: "Pritish Mahajan",
     review:
       "What an incredible experience in Himachal. The tour was well organized, with great hotels and excellent service. The sights were stunning, especially in Manali..",
     rating: 5,
