@@ -13,7 +13,6 @@ const EnquiryModel = ({ closeModal }) => {
           <div className='modal-body'>
             <div className='modal-header'>
             <h4>Save up to 30% this Winter Season & Summer Vacation!</h4>
-            <p>Simply fill the form below and let our travel consultant contact you to resolve your query.</p>
             </div>
             <form style={{ width: '100%' }} >
               <div className='modal-input'>
