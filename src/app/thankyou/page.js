@@ -1,13 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import './../../styles/Thankyou.css'
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function ThankYou() {
   return (
-    <>
-    <Navbar/>
+
+    <div>
+      <Navbar/>
     <div className="thank-you-container">
       <div className="thank-you-card">
         <div className="card-content">
@@ -30,6 +31,6 @@ export default function ThankYou() {
       </div>
     </div>
     <Footer/>
-    </>
+    </div>
   )
 }
