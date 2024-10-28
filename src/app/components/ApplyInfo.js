@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaUniversity, FaBath, FaCubes, FaHospital } from "react-icons/fa";
-import './../styles/ApplyInfo.css'
+import '../../styles/ApplyInfo.css'
 
 const ApplyInfo = () => {
 

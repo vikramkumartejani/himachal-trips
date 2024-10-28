@@ -12,6 +12,7 @@
 }
 
 .modal-container {
+  margin: 14px;
   background-color: white;
   padding: 10px 0px;
   border-radius: 10px;
@@ -24,20 +25,23 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: 1px solid #dee2e6;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px);
 }
 .modal-header h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600 !important;
+  margin-top: -10px;
 }
-.modal-header button {
+.no-thanks {
   background: transparent;
   outline: none;
   border: none;
-  font-size: 24px;
+  font-size: 16px;
+  text-decoration: underline;
   cursor: pointer;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 600;
+  width: 100%;
 }
 .modal-body {
   padding: 1rem;
@@ -51,17 +55,19 @@
   font-weight: 600 !important;
 }
 .modal-input {
-  padding: 8px 16px;
-  background-color: #dee2e6;
+  /* background-color: #dee2e6; */
+  border: 1px solid #CCC;
   margin-bottom: 1rem;
   margin-top: 1rem;
   width: 100%;
   border-radius: 6px;
 }
 .modal-input input {
+  padding: 10px 16px;
   background: transparent;
   border: none;
-  outline: none;
+  outline: #e67809;
+  /* outline: none; */
   font-size: 1rem;
   width: 100%;
 }

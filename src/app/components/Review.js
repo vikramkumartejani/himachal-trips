@@ -5,7 +5,9 @@ import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./../styles/Review.css";
+import "../../styles/Review.css";
+import { FcGoogle } from "react-icons/fc";
+
 
 const reviews = [
   {
@@ -117,6 +119,7 @@ const Review = () => {
                 <div className="stars">
                   {"★".repeat(review.rating)}
                 </div>
+                <FcGoogle size={20} className="mb-4" />
                 <p>{review.review}</p>
               </div>
             ))}

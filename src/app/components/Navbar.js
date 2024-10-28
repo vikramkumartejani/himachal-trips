@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FaMobileScreen, FaFacebookF, FaInstagram } from "react-icons/fa6";
 
-import './../styles/Navbar.css'
+import '../../styles/Navbar.css'
 
 const Navbar = () => {
 

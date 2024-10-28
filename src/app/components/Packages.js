@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import EnquiryModel from "./EnquiryModel";
 
 import { FaBed, FaBath, FaShareSquare } from "react-icons/fa";
-import "./../styles/Packages.css";
+import "../../styles/Packages.css";
 
 const Packages = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -116,7 +116,7 @@ const Packages = () => {
                     <button className="package-btns" onClick={handleEnquiryClick}>
                       Enquiry Now
                     </button>
-                    <button className="package-btns" onClick={(() => router.push('/singledestinationdetails'))}>View Details</button>
+                    <button className="package-btns" onClick={(() => router.push('/single'))}>View Details</button>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useRef, useCallback } from 'react'
-import './../styles/Footer.css'
+import '../../styles/Footer.css'
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { AiOutlinePhone } from 'react-icons/ai';
 
@@ -25,12 +25,6 @@ const Footer = () => {
     event.preventDefault()
     setFormStatus('submitting')
     setErrorMessage('')
-
-    if (!phone.match(/^\d{10}$/)) {
-      setFormStatus('error')
-      setErrorMessage('Please enter a valid 10-digit phone number.')
-      return
-    }
 
     const formData = new FormData()
     formData.append("phone", phone)

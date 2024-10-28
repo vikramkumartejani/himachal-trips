@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { FaLaptop, FaDatabase, FaLock, FaCodepen } from "react-icons/fa";
-import './../styles/Offer.css'
+import '../../styles/Offer.css'
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 

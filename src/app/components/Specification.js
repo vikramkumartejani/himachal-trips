@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import CountUp from 'react-countup';
 import { FaMapMarkerAlt, FaUsers, FaBuilding, FaHome } from "react-icons/fa";
-import './../styles/Specification.css';
+import '../../styles/Specification.css';
 
 const Specification = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -6,12 +6,12 @@
   position: relative;
   z-index: 1;
 }
-.error-message{
+.error-message {
   color: red;
   text-align: center;
   width: 100%;
 }
-.success-message{
+.success-message {
   color: green;
   text-align: center;
   width: 100%;
@@ -52,15 +52,21 @@
   padding: 1rem;
 }
 
+.form-container-border {
+  padding: 5px 5px;
+  border-radius: 15px;
+  background-color: white;
+}
+
 .form {
+  /* border: 1px solid red; */
   margin: auto;
-  max-width: 500px;
+  /* max-width: 400px; */
   width: 100%;
   background: white;
-  padding: 30px 20px;
+  padding: 20px 15px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
   border-radius: 15px;
-  border: 8px solid rgba(255, 255, 255, 0.35);
 }
 
 .form h3 {
@@ -121,7 +127,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -145,7 +152,6 @@
     transform: scale(0.95);
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   .form-container {
@@ -180,4 +186,106 @@
   .form-container {
     gap: 0px;
   }
+}
+
+/* Animated border */
+.card-border {
+  position: relative;
+  width: 100%;
+  border-radius: 13.34px;
+  isolation: isolate;
+  /* background-color: #1f2835cc; */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-border::before,
+.card-border::after {
+  content: "";
+  position: absolute;
+}
+
+.card-border::before {
+  content: ""; /* Create content for the pseudo-element */
+  position: absolute;
+  width: 100%;
+  height: 180%;
+
+  z-index: -2; /* Ensure it's behind the card-border content */
+  animation: border 8s linear infinite; /* Optional gradient animation */
+}
+
+@keyframes border {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.card-border::after {
+  /* background-color: #1f2835; */
+  inset: 2px;
+  border-radius: 13.34px;
+}
+
+/* Animated border */
+.card-border-wide {
+  position: relative;
+  width: 100%;
+  border-radius: 13.34px;
+  isolation: isolate;
+  /* background-color: #1f2835cc; */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-border-wide::before,
+.card-border-wide::after {
+  content: "";
+  position: absolute;
+}
+
+.card-border-wide::before {
+  content: "";
+  position: absolute;
+  width: 180%;
+  height: 130%;
+  background: linear-gradient(
+    0deg,
+    rgba(47, 82, 146, 0) 13.7%,
+    rgba(47, 82, 146, 0.4) 27.55%,
+    #2f5292 36.4%,
+    #ffb74d 53.88%,
+    rgba(47, 82, 146, 0) 89.18%
+  );
+
+  z-index: -2;
+  animation: border-wide 8s linear infinite;
+}
+
+@keyframes border-wide {
+  0% {
+    transform: rotateZ(0deg);
+    animation-timing-function: ease-in; /* Speed up at the start */
+  }
+  10% {
+    transform: rotateZ(-36deg); /* Faster rotation in the first 10% */
+    animation-timing-function: linear; /* Maintain normal speed afterward */
+  }
+  90% {
+    transform: rotateZ(-324deg); /* Normal speed between 10% and 90% */
+    animation-timing-function: ease-out; /* Start speeding up at the end */
+  }
+  100% {
+    transform: rotateZ(-360deg); /* Complete rotation, speed up */
+  }
+}
+
+.card-border-wide::after {
+  /* background-color: #1f2835; */
+  inset: 2px;
+  border-radius: 13.34px;
 }

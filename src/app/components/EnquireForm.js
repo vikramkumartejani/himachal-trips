@@ -3,7 +3,7 @@
 import React, { useState, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { FaCheckCircle } from "react-icons/fa"
-import './../styles/EnquireForm.css'
+import '../../styles/EnquireForm.css'
 
 export default function EnquireForm() {
   const [formStatus, setFormStatus] = useState(null)
@@ -112,44 +112,46 @@ export default function EnquireForm() {
             <p>Tourism is a social, cultural and economic phenomenon which entails the movement of people to countries or places outside their usual environment for personal or business/professional purposes. <br />Tourism generates income and creates training opportunities and easily accessible jobs, as well as sales markets for services and local products.</p>
           </div>
           <div className='main-form-container'>
-            <div className='form'>
-              <h3>
-                Enquire Now!
-              </h3>
-              <p>
-                <i className='check-icon'><FaCheckCircle color='#ff8810' /></i>
-                Get 100% customized tour quotes for holiday packages in Himachal Pradesh.
-              </p>
-              <p>
-                <i className='check-icon'><FaCheckCircle color='#ff8810' /></i>
-                Just fill out the form, and our tour advisor will get in touch to offer you the best deal.
-              </p>
-              <form onSubmit={handleSubmit} ref={formRef}>
-                <div className='form-input'>
-                  <input type="text" name="fullName" placeholder='Enter Your Name' required />
-                </div>
-                <div className='form-input'>
-                  <input type="email" name="email" placeholder='Enter Your Email' required />
-                </div>
-                <div className='form-input'>
-                  <input type="tel" name="phone" placeholder='Enter Your 10-digit Mobile No.' required />
-                </div>
-                <button
-                  type="submit"
-                  className={`form-btn ${formStatus === 'submitting' ? 'submitting' : formStatus === 'submitted' ? 'submitted' : ''}`}
-                  disabled={formStatus === 'submitting'}
-                >
-                  {formStatus === 'submitting' ? 'Submitting...' : formStatus === 'submitted' ? 'Submitted' : 'SUBMIT'}
-                </button>
+            <div className='form-container-border card-border-wide'>
+              <div className='form '>
+                <h3>
+                  Enquire Now!
+                </h3>
+                <p>
+                  <i className='check-icon'><FaCheckCircle color='#ff8810' /></i>
+                  Get 100% customized tour quotes for holiday packages in Himachal Pradesh.
+                </p>
+                <p>
+                  <i className='check-icon'><FaCheckCircle color='#ff8810' /></i>
+                  Just fill out the form, and our tour advisor will get in touch to offer you the best deal.
+                </p>
+                <form onSubmit={handleSubmit} ref={formRef}>
+                  <div className='form-input'>
+                    <input type="text" name="fullName" placeholder='Enter Your Name' required />
+                  </div>
+                  <div className='form-input'>
+                    <input type="email" name="email" placeholder='Enter Your Email' required />
+                  </div>
+                  <div className='form-input'>
+                    <input type="tel" name="phone" placeholder='Enter Your 10-digit Mobile No.' required />
+                  </div>
+                  <button
+                    type="submit"
+                    className={`form-btn ${formStatus === 'submitting' ? 'submitting' : formStatus === 'submitted' ? 'submitted' : ''}`}
+                    disabled={formStatus === 'submitting'}
+                  >
+                    {formStatus === 'submitting' ? 'Submitting...' : formStatus === 'submitted' ? 'Submitted' : 'SUBMIT'}
+                  </button>
 
 
-              </form>
-              {formStatus === 'success' && (
-                <p className="success-message">Form submitted successfully!</p>
-              )}
-              {formStatus === 'error' && (
-                <p className="error-message">{errorMessage}</p>
-              )}
+                </form>
+                {formStatus === 'success' && (
+                  <p className="success-message">Form submitted successfully!</p>
+                )}
+                {formStatus === 'error' && (
+                  <p className="error-message">{errorMessage}</p>
+                )}
+              </div>
             </div>
           </div>
         </div>
