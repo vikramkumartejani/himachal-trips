@@ -71,7 +71,7 @@ const Packages = () => {
   };
   return (
     <div>
-      <div className="packages-main">
+      <div className="packages-main" id="packages">
         <div className="packages-container">
           <div className="packages-heading">
             <h3>Himachal Tour Packages on sale</h3>
@@ -80,7 +80,7 @@ const Packages = () => {
               below.
             </p>
           </div>
-          <div className="packages-row">
+          <div className="packages-row" >
             {packagesData.map((packages, index) => (
               <div key={index} className="package-data-container">
                 <a href="#" className="location-image">

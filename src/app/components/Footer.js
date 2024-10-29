@@ -103,7 +103,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className='footer'>
+      <div className='footer' id='footer'>
         <div className='container-1'>
           <div className='box'>
             <div className='text'>
@@ -113,6 +113,7 @@ const Footer = () => {
               <div className='input'>
                 <input
                   type="tel"
+
                   name="phone"
                   placeholder='Enter Your 10-digit Mobile No.'
                   value={phone}
@@ -135,7 +136,7 @@ const Footer = () => {
                 About Us
               </h6>
               <p>
-              We are honored to have been recognized as the #1 travel company in the area for the past twenty-five years, renowned for our exceptional hospitality, services, and transportation. Our commitment is to provide personalized attention to both leisure and business travelers, ensuring that all your needs are met.
+                We are honored to have been recognized as the #1 travel company in the area for the past twenty-five years, renowned for our exceptional hospitality, services, and transportation. Our commitment is to provide personalized attention to both leisure and business travelers, ensuring that all your needs are met.
               </p>
               <div className='social'>
                 <h6 className='title'>
@@ -150,19 +151,25 @@ const Footer = () => {
                   Useful Links
                 </h6>
                 <li>
-                  <a href="#">About</a>
+                  <a href="#home" >
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#locations">
+                    Popular Locations
+
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Shimla</a>
+                  <a href="#packages">
+                    Packages
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Manali</a>
-                </li>
-                <li>
-                  <a href="#">Himachal</a>
+                  <a href="#footer">
+                    Contact
+                  </a>
                 </li>
 
               </ul>

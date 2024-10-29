@@ -12,7 +12,7 @@ const Locations = () => {
   ];
 
   return (
-    <div className="location-main">
+    <div className="location-main" id="locations">
       <div className="location-container">
         <div className="location-heading">
           <h3>Popular Locations</h3>

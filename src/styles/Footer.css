@@ -1,6 +1,7 @@
 .footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    #2f5292 0 0;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    #2f5292 0 0; */
+    background-image: url('../../public/assests/footer-bg.png');
   background-size: cover;
   padding: 4rem 0;
   background-attachment: fixed;

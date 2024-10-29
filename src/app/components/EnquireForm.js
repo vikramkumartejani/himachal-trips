@@ -105,7 +105,7 @@ export default function EnquireForm() {
 
   return (
     <div>
-      <div className='form-main'>
+      <div className='form-main' id='home'>
         <div className='form-container'>
           <div className='form-info'>
             <h3>My Bharat Trips</h3>
@@ -113,7 +113,7 @@ export default function EnquireForm() {
           </div>
           <div className='main-form-container'>
             <div className='form-container-border card-border-wide'>
-              <div className='form '>
+              <div className='form'>
                 <h3>
                   Enquire Now!
                 </h3>

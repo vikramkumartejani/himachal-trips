@@ -1,9 +1,11 @@
 .form-main {
-  background: url(/assests/RESTRICTED-leadAsset-IndiaShimlaExtension.webp)
-    no-repeat;
+  background: url(/assests/home-bg.jpg) no-repeat;
   background-size: cover;
   padding: 1rem 0;
   position: relative;
+  background-position: top;
+  width: 100%;
+  /* aspect-ratio: 4/1; */
   z-index: 1;
 }
 .error-message {
@@ -25,22 +27,29 @@
   gap: 30px;
 }
 .form-info {
-  /* background-color: #080808a1; */
+  background-color: #ffffff82;
   border-radius: 4px;
-  width: 100%;
-  max-width: 600px;
   color: #fff;
-  padding: 3rem;
+  margin: 1.1rem 0;
+  padding: 2rem 1rem;
 }
 .form-info h3 {
-  font-size: 36px;
+  /* font-size: 36px;
   font-weight: 600;
   line-height: 42px;
-  /* color: #000000; */
+  color: #000000; */
+  font-size: 30px;
+    text-transform: uppercase;
+    background-color: #ff8810;
+    padding: 10px 30px;
+    width: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
 }
 .form-info p {
   font-size: 16px;
-  /* color: #000000; */
+  color: #000000;
   line-height: 24px;
   margin-top: 10px;
   font-weight: 500;
@@ -53,14 +62,17 @@
 }
 
 .form-container-border {
-  padding: 5px 5px;
+  padding:2px 2px;
   border-radius: 15px;
   background-color: white;
+
 }
 
 .form {
   /* border: 1px solid red; */
   margin: auto;
+  position: relative;
+  z-index: 9999;
   /* max-width: 400px; */
   width: 100%;
   background: white;
@@ -96,7 +108,7 @@
   border-radius: 10px;
   height: 45px;
   padding: 0 10px;
-  border: 2px solid #eee;
+  border: 2px solid #aaa;
   transition: border 0.3s ease;
 }
 .form-input input:focus {
@@ -185,6 +197,22 @@
   }
   .form-container {
     gap: 0px;
+  }
+
+  .form-info h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: #ff8810;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    color: white;
+  }
+  .form-info p {
+    font-size: 15px;
+    line-height: 30px;
+    text-align: justify;
   }
 }
 

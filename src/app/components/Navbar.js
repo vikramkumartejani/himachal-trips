@@ -60,35 +60,31 @@ const Navbar = () => {
                     </div>
 
                     <button className='toggle-button' onClick={toggleMenu}>
-                        {isOpen ? <FaTimes /> : <FaBars />}
+                        {isOpen ? <FaTimes color='white' /> : <FaBars />}
                     </button>
                     <div className={`links ${isOpen ? 'active' : ''}`}>
                         <div className='close-btn'>
-                            <button onClick={toggleMenu} className=''><FaTimes color='#ff8810' size={24} /></button>
+                            <button onClick={toggleMenu} className=''><FaTimes color='white' size={24} /></button>
                         </div>
                         <ul className='menu-links'>
                             <li>
-                                <a href="#">
+                                <a href="#home" onClick={toggleMenu}>
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Ladakh
+                                <a href="#locations" onClick={toggleMenu}>
+                                Popular Locations
+
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    About
+                                <a href="#packages" onClick={toggleMenu}>
+                                Packages
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
+                                <a href="#footer" onClick={toggleMenu}>
                                     Contact
                                 </a>
                             </li>

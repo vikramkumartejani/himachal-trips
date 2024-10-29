@@ -61,9 +61,7 @@
   transition: color 0.3s ease;
 }
 
-.links a:hover {
-  color: #ff8810;
-}
+ 
 
 .toggle-button {
   display: none;
@@ -91,9 +89,9 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 75%;
-    max-width: 300px;
-    background-color: black;
+    width: 100%;
+    /* max-width: 300px; */
+    background-color:#ff8810;
     padding: 2rem 1rem;
     z-index: 100;
     transform: translateX(100%);
@@ -102,18 +100,24 @@
 
   .links.active {
     display: flex;
+    width: 100%;
     transform: translateX(0);
   }
 
   .links ul {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 20px;
   }
 
   .links a {
     color: white;
     font-size: 18px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
   }
 
   .menu-links{
