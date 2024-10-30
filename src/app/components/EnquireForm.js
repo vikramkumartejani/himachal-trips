@@ -109,7 +109,7 @@ export default function EnquireForm() {
         <div className='form-container'>
           <div className='form-info'>
             <h3>Himachal Tour Packages </h3>
-            <p>SHIMLA | KULLU | MANALI | DHARAMSHALA | DALHOUSIE | KHAJIYAAR | SOLANG /</p>
+            <p>SHIMLA | KULLU | MANALI | DHARAMSHALA | DALHOUSIE | KHAJIYAAR | SOLANG </p>
           </div>
           <div className='main-form-container'>
             <div className='form-container-border card-border-wide'>
