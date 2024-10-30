@@ -108,8 +108,8 @@ export default function EnquireForm() {
       <div className='form-main' id='home'>
         <div className='form-container'>
           <div className='form-info'>
-            <h3>My Bharat Trips</h3>
-            <p>Tourism is a social, cultural and economic phenomenon which entails the movement of people to countries or places outside their usual environment for personal or business/professional purposes. <br />Tourism generates income and creates training opportunities and easily accessible jobs, as well as sales markets for services and local products.</p>
+            <h3>Himachal Tour Packages </h3>
+            <p>SHIMLA | KULLU | MANALI | DHARAMSHALA | DALHOUSIE | KHAJIYAAR | SOLANG /</p>
           </div>
           <div className='main-form-container'>
             <div className='form-container-border card-border-wide'>

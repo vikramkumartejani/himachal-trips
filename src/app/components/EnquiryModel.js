@@ -93,7 +93,7 @@ const EnquiryModel = ({ closeModal }) => {
     <div className='modal-main-container'>
       <div className='modal-background'>
         <div className='modal-container'>
-          <Image src='/assests/enquiry-bg.jpg' alt='t' width={300} height={200} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', borderRadius:'10px' }} />
+          <Image src='/assests/modal-image.png' alt='t' width={300} height={200} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', borderRadius:'10px' }} />
 
           <div className='modal-body'>
             <div className='modal-header'>
