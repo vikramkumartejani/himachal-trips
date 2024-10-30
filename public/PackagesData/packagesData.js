@@ -9,29 +9,33 @@ export const packagesData = [
     person: "Per Person",
     details: [
       {
-        day: "DAY 1: Arrival in Shimla",
+        day: "Day 1: DELHI – SHIMLA OVERNIGHT JOURNEY BY VOLVO (370 KMS/8-10 HRS)",
         description:
-          "Arrival at Chandigarh Airport/Railway station and drive to Shimla.",
+          " At 08: 00 pm report at Delhi Volvo pick up point (on your own) & Depart for Shimla to experience a wonderful vacation. Overnight Journey by Volvo.",
       },
       {
-        day: "DAY 2: Shimla Sightseeing",
+        day: "Day 2: REACH SHIMLA AND VISIT SHIMLA LOCAL SIGHTSEEING",
         description:
-          "Full day excursion to Kufri, visit Jakhoo Temple, and explore Shimla.",
+          "Today morning reach Shimla Volvo station our tour representative will meet you then drive to hotel after fresh up and some rest Exploration The Mall, Scandal Point, Ridge, Lakkar Bazaar and Christ Church. Overnight stay in Hotel.",
       },
       {
-        day: "DAY 3: Shimla to Manali",
+        day: "Day 3: SHIMLA – KUFRI (22 KMS/ 45 MINS)",
         description:
-          "Drive from Shimla to Manali, visit Kullu Valley, Sunder Nagar, and Kullu Shawl Factory.",
+          "After fresh up proceed for Shimla sightseeing to cover: Kufri (It is one the best ski point in winters and in summers, it turns into a famous tourist picnic spot) Jakhu Temple (According to Mahabharata Myth Hanuman Ji rested while Searching for Sanjivini Plant), Vice regal lodge which was once the residence of British Viceroy of India which is now converted to advance study for its academic use). Overnight stay in Hotel.",
       },
       {
-        day: "DAY 4: Local Sightseeing in Manali",
+        day: "Day 4: SHIMLA – KULLU – MANALI (260 KMS/7-8 hrs)",
         description:
-          "Local sightseeing in Manali including Hadimba Temple and Vashisht.",
+          "Today morning after breakfast check out from the hotel and proceed towards Manali On the way to Manali, crossby Sunder Nagar Lake Pandoh Dam, visit Hanogi Mata Temple and Vaishno Devi Temple. Reach Manali & check into the hotel. Overnight stay at hotel.",
       },
       {
-        day: "DAY 5: Explore Manali",
-        description: "Explore more in Manali and prepare for departure.",
+        day: "Day 5: MANALI – SOLANG VALLEY – ROHTANG PASS UP  TO  BARRIER POINT",
+        description: "(The point where the vehicle will stop by the Police /BRO in winters due to heavy snow fall & other natural calamities)  Today morning after breakfast has excursion tour to Rohtang Pass upto Snow Line (Upto Snow Line refers to the barrier placed by the government to avoid risks during heavy Snowfall): On the way to Rohtang Pass places are Kothi, Gorge, Gulaba, Marh. In Rohtang Pass enjoy snow activities etc (on your own expenses). Afternoon at 2:00-3:00 PM return back to Visit Solang Valley Sightseeing. Dinner & Overnight Stay at the hotel.Please Note: . Rohtang pass is closed on every Tuesday and visiting months will depend upon Government Notice. In Winters, Vehicle will stop by the Police Barrier/ Traffic Jam Queue. Since NGT (National Green Tribunal) is allowing only limited vehicle to Rohtang pass per day, the Rohtang pass sightseeing will be subject to availability of the permit available on the spot. Also the cab services (including permission charges) will cost extra depending on the vehicle opted on sharing basis / individual basis by the customer",
       },
+      {
+        day: "Day 6: MANALI + LOCAL CITY TOUR (3 - 4 HRS) AND OVERNIGHT JOURNEY TO DELHI",
+        description: "After fresh up, proceed to half day city tour of Manali which includes- Hadimba Devi Temple (This temple constructed in 1553 A.D is Dedicated to Himachal’s Most Significant Deity Hadimba Mata), Vashisht Hot springs (Dedicated to Vashist Muni & well known for its hot Curable water and Religious). Evening you will be free to explore the Mall Road & IBEX Market of Manali, after completed all sightseeing then our tour representative will drop you to your Volvo station pick your Volvo start your overnight journey Delhi. Your trip end here.",
+      },      
     ],
   },
   {
@@ -44,25 +48,29 @@ export const packagesData = [
     person: "Per Person",
     details: [
       {
-        day: "DAY 1: Arrival in Shimla",
-        description: "Arrival at Chandigarh and drive to Shimla.",
+        day: "Day 1: DELHI – SHIMLA OVERNIGHT JOURNEY BY VOLVO (370 KMS/8-10 HRS)",
+        description: "At 09: 00 pm report at Delhi Volvo pick up point (on your own) & Depart for Shimla to experience a wonderful vacation. Overnight Journey by Volvo.",
       },
       {
-        day: "DAY 2: Shimla and Kufri Sightseeing",
-        description: "Sightseeing in Shimla and Kufri.",
+        day: "Day 2: REACH SHIMLA AND VISIT SHIMLA LOCAL SIGHTSEEING",
+        description: "Today morning reach Shimla Volvo station our tour representative will meet you then drive to hotel after fresh up and some rest Exploration The Mall, Scandal Point, Ridge, Lakkar Bazaar and Christ Church. Overnight stay in Hotel.",
       },
       {
-        day: "DAY 3: Travel to Manali",
-        description: "Travel to Manali, visiting Kullu on the way.",
+        day: "Day 3: SHIMLA – KUFRI (22 KMS/ 45 MINS)",
+        description: "After fresh up proceed for Shimla sightseeing to cover: Kufri (It is one the best ski point in winters and in summers, it turns into a famous tourist picnic spot) Jakhu Temple (According to Mahabharata Myth Hanuman Ji rested while Searching for Sanjivini Plant), Vice regal lodge which was once the residence of British Viceroy of India which is now converted to advance study for its academic use). Overnight stay in Hotel.",
       },
       {
-        day: "DAY 4: Explore Manali",
-        description: "Explore Manali local attractions.",
+        day: "Day 4: SHIMLA – KULLU – MANALI (260 KMS/7-8 hrs)",
+        description: "Today morning after breakfast check out from the hotel and proceed towards Manali On the way to Manali, crossby Sunder Nagar Lake Pandoh Dam, visit Hanogi Mata Temple and Vaishno Devi Temple. Reach Manali & check into the hotel. Overnight stay at hotel.",
       },
       {
-        day: "DAY 5: Leisure Day in Manali",
-        description: "Free day in Manali for leisure.",
+        day: "Day 5: MANALI – SOLANG VALLEY – ROHTANG PASS Up to Barrier Point",
+        description: "(The point where the vehicle will stop by the Police /BRO in winters due to heavy snow fall & other natural calamities) Today morning after breakfast has excursion tour to Rohtang Pass upto Snow Line (Upto Snow Line refers to the barrier placed by the government to avoid risks during heavy Snowfall): On the way to Rohtang Pass places are Kothi, Gorge, Gulaba, Marh. In Rohtang Pass enjoy snow activities etc (on your own expenses). Afternoon at 2:00-3:00 PM return back to Visit Solang Valley Sightseeing. Dinner & Overnight Stay at the hotel.Please Note: . Rohtang pass is closed on every Tuesday and visiting months will depend upon Government Notice. In Winters, Vehicle will stop by the Police Barrier/ Traffic Jam Queue. Since NGT (National Green Tribunal) is allowing only limited vehicle to Rohtang pass per day, the Rohtang pass sightseeing will be subject to availability of the permit available on the spot. Also the cab services (including permission charges) will cost extra depending on the vehicle opted on sharing basis / individual basis by the customer",
       },
+      {
+        day: "Day 6: MANALI + LOCAL CITY TOUR (3 - 4 HRS) AND OVERNIGHT JOURNEY TO DELHI",
+        description: "After fresh up, proceed to half day city tour of Manali which includes- Hadimba Devi Temple (This temple constructed in 1553 A.D is Dedicated to Himachal’s Most Significant Deity Hadimba Mata), Vashisht Hot springs (Dedicated to Vashist Muni & well known for its hot Curable water and Religious). Evening you will be free to explore the Mall Road & IBEX Market of Manali, after completed all sightseeing then our tour representative will drop you to your Volvo station pick your Volvo start your overnight journey Delhi. Your trip end here.",
+      },      
     ],
   },
   {
@@ -75,37 +83,41 @@ export const packagesData = [
     person: "Per Person",
     details: [
       {
-        day: "DAY 1: Arrival in Shimla",
-        description: "Arrive at Chandigarh, transfer to Shimla.",
+        day: "Day 1: DELHI – SHIMLA (370 KMS/8-10 HRS)",
+        description: "After pick from Delhi Airport/Railway station, start your wonderful vacation to Himachal starting from Shimla. Reach Shimla within 10 hours and check into the hotel. Dinner & Overnight stay.Shimla renowned its name as Queen of hills due to its flattering sceneries and colonial heritage which has retained its charm from British India time to till now.",
       },
       {
-        day: "DAY 2: Shimla Exploration",
-        description: "Explore Shimla and Kufri.",
+        day: "Day 2: SHIMLA – KUFRI – LOCAL S/S – SHIMLA",
+        description: "After fresh up proceed for Shimla sightseeing to cover: Kufri (It is one the best ski point in winters and in summers, it turns into a famous tourist picnic spot) Jakhu Temple (According to Mahabharata Myth Hanuman Ji rested while Searching for Sanjivini Plant), Vice regal lodge which was once the residence of British Viceroy of India which is now converted to advance study for its academic use). In Evening Exploration on your own: The Mall, Scandal Point, Ridge, Lakkar Bazaar, and Christ Church and then have your overnight stay at Hotel.",
       },
       {
-        day: "DAY 3: Shimla to Manali",
-        description: "Travel to Manali via Kullu.",
+        day: "Day 3: SHIMLA – KULLU – MANALI (260 KMS/7-8 hrs)",
+        description: "Today morning after breakfast check out from the hotel and proceed towards Manali On the way to Manali, cross by Pandoh Dam, visit Hanogi Mata Temple and Vaishno Devi Temple. Reach Manali & check into the hotel. Overnight stay at hotel.",
       },
       {
-        day: "DAY 4: Manali Sightseeing",
-        description: "Local sightseeing in Manali.",
+        day: "Day 4: MANALI LOCAL CITY TOUR (3 - 4 HRS)",
+        description: "After fresh up, proceed to half day city tour of Manali which includes- Hadimba Devi Temple (This temple constructed in 1553 A.D is Dedicated to Himachal’s Most Significant Deity Hadimba Mata), Vashisht Hot springs (Dedicated to Vashist Muni & well known for its hot Curable water and Religious). Evening you will be free to explore the Mall Road & IBEX Market of Manali, Overnight at hotel.",
       },
       {
-        day: "DAY 5: Rohtang Pass Excursion",
-        description: "Day trip to Rohtang Pass.",
+        day: "Day 5: Manali – Solang Valley (14 Kms) or Rohtang Pass Up to Barrier Point",
+        description: "Today morning after breakfast have excursion trip to Solang Valley where you can admire the enchanting sights of the surroundings and can enjoy various thrilling adventure activities by own cost. As the winter approaches, the same Solang Valley takes a shape of a Snowy Blanket, thus forming a perfect vista for several snow activities. After enjoying the outing return to hotel for Overnight stay.",
       },
       {
-        day: "DAY 6: Visit Dharamshala",
-        description: "Visit Dharamshala.",
+        day: "Day 6: MANALI – DHARAMSHALA (240 KMS / 7-8 HRS)",
+        description: "After breakfast check out from the Hotel & drive to Dharamshala via Kullu (8-9hrs).On the way witness the spectacular sight of lofty mountains, meeting the clouds; lush green valleys and tranquil waterfalls enchanting you throughout your trip .Reach Dharamshala& transfer to the hotel. Overnight stay at Hotel.",
       },
       {
-        day: "DAY 7: Explore Dalhousie",
-        description: "Explore Dalhousie.",
+        day: "Day 7: DHARAMSHALA – LOCAL SIGHT SEEING - DALHOUSIE",
+        description: "After Breakfast, cover official residence of Dalai Lama, Mcleodganj, Bhagsunath temple and Dal Lake .Evening free to explore local market & Kotwai Bazaar. After that drive to Dalhousie check in hotel dinner and overnight stay.",
       },
       {
-        day: "DAY 8: Return to Chandigarh",
-        description: "Return to Chandigarh.",
+        day: "Day 8: DALHOUSIE – KHAJJIAR (22 KMS)",
+        description: "Today after breakfast, cover Khajjiar sightseeing. Khajjiar is a place where one can easily spend whole day by admiring the beauty of sparklingKhajjair Lake, wandering in 9 hole golf course or just sit and feel the peace.",
       },
+      {
+        day: "Day 09: Dalhousie to Delhi",
+        description: "After Breakfast check out from the hotel drive to Delhi, evening reach Delhi hotel dinner and overnight stay.",
+      },      
     ],
   },
   {
@@ -118,45 +130,45 @@ export const packagesData = [
     person: "Per Person",
     details: [
       {
-        day: "DAY 1: Arrival in Amritsar",
-        description: "Arrival at Amritsar, visit Golden Temple.",
+        day: "Day 1: DELHI – SHIMLA (370 KMS/8-10 HRS)",
+        description: "After pick from Delhi Airport/Railway station, start your wonderful vacation to Himachal starting from Shimla. Reach Shimla within 10 hours and check into the hotel. Dinner & Overnight stay.Shimla renowned its name as Queen of hills due to its flattering sceneries and colonial heritage which has retained its charm from British India time to till now.",
       },
       {
-        day: "DAY 2: Travel to Shimla",
-        description: "Travel to Shimla.",
+        day: "Day 2: SHIMLA – KUFRI – LOCAL S/S – SHIMLA",
+        description: "After fresh up proceed for Shimla sightseeing to cover: Kufri (It is one the best ski point in winters and in summers, it turns into a famous tourist picnic spot) Jakhu Temple (According to Mahabharata Myth Hanuman Ji rested while Searching for Sanjivini Plant), Vice regal lodge which was once the residence of British Viceroy of India which is now converted to advance study for its academic use). In Evening Exploration on your own: The Mall, Scandal Point, Ridge, Lakkar Bazaar, and Christ Church and then have your overnight stay at Hotel.",
       },
       {
-        day: "DAY 3: Shimla Sightseeing",
-        description: "Shimla local sightseeing.",
+        day: "Day 3: SHIMLA – KULLU – MANALI (260 KMS/7-8 hrs)",
+        description: "Today morning after breakfast check out from the hotel and proceed towards Manali On the way to Manali, cross by Pandoh Dam, visit Hanogi Mata Temple and Vaishno Devi Temple. Reach Manali & check into the hotel. Overnight stay at hotel.",
       },
       {
-        day: "DAY 4: Depart for Manali",
-        description: "Depart for Manali.",
+        day: "Day 4: MANALI LOCAL CITY TOUR (3 - 4 HRS)",
+        description: "After fresh up, proceed to half day city tour of Manali which includes- Hadimba Devi Temple (This temple constructed in 1553 A.D is Dedicated to Himachal’s Most Significant Deity Hadimba Mata), Vashisht Hot springs (Dedicated to Vashist Muni & well known for its hot Curable water and Religious). Evening you will be free to explore the Mall Road & IBEX Market of Manali, Overnight at hotel.",
       },
       {
-        day: "DAY 5: Explore Manali",
-        description: "Manali local attractions.",
+        day: "Day 5: Manali – Solang Valley (14 Kms) or Rohtang Pass Up to Barrier Point",
+        description: "Today morning after breakfast have excursion trip to Solang Valley where you can admire the enchanting sights of the surroundings and can enjoy various thrilling adventure activities by own cost. As the winter approaches, the same Solang Valley takes a shape of a Snowy Blanket, thus forming a perfect vista for several snow activities. After enjoying the outing return to hotel for Overnight stay.",
       },
       {
-        day: "DAY 6: Visit Rohtang Pass",
-        description: "Visit Rohtang Pass.",
+        day: "Day 6: MANALI – DHARAMSHALA (240 KMS / 7-8 HRS)",
+        description: "After breakfast check out from the Hotel & drive to Dharamshala via Kullu (8-9hrs).On the way witness the spectacular sight of lofty mountains, meeting the clouds; lush green valleys and tranquil waterfalls enchanting you throughout your trip .Reach Dharamshala& transfer to the hotel. Overnight stay at Hotel.",
       },
       {
-        day: "DAY 7: Travel to Dharamshala",
-        description: "Travel to Dharamshala.",
+        day: "Day 7: DHARAMSHALA – LOCAL SIGHT SEEING - DALHOUSIE",
+        description: "After Breakfast, cover official residence of Dalai Lama, Mcleodganj, Bhagsunath temple and Dal Lake .Evening free to explore local market & Kotwai Bazaar. After that drive to Dalhousie check in hotel dinner and overnight stay.",
       },
       {
-        day: "DAY 8: Explore Dharamshala",
-        description: "Explore Dharamshala.",
+        day: "Day 8: DALHOUSIE – KHAJJIAR (22 KMS)",
+        description: "Today after breakfast, cover Khajjiar sightseeing. Khajjiar is a place where one can easily spend whole day by admiring the beauty of sparklingKhajjair Lake, wandering in 9 hole golf course or just sit and feel the peace.",
       },
       {
-        day: "DAY 9: Travel to Dalhousie",
-        description: "Travel to Dalhousie.",
-      },
+        day: "Day 09: Dalhousie to Amritsar",
+        description: "After Breakfast Check out from the hotel and proceed to Amritsar, on reaching Amritsar visit Jalia wala Bagh,golden temple,wagha border and later drive to hotel check inn at hotel. Night stay & Dinner at hotel.",
+      },   
       {
-        day: "DAY 10: Return to Amritsar",
-        description: "Return to Amritsar.",
-      },
+        day: "Day 09: Amritsar to Delhi",
+        description: "After breakfast checkout from the hotel. And leave for delhi. In Evening reach delhi and go your own destinations its a memorable journey.",
+      },           
     ],
   },
   {
@@ -204,41 +216,41 @@ export const packagesData = [
     person: "Per Person",
     details: [
       {
-        day: "DAY 1: Arrival in Shimla",
-        description: "Arrive at Shimla.",
+        day: "Day 1: DELHI – SHIMLA (370 KMS/8-10 HRS)",
+        description: "After pick from Delhi Airport/Railway station, start your wonderful vacation to Himachal starting from Shimla. Reach Shimla within 10 hours and check into the hotel. Dinner & Overnight stay.Shimla renowned its name as Queen of hills due to its flattering sceneries and colonial heritage which has retained its charm from British India time to till now.",
       },
       {
-        day: "DAY 2: Shimla Sightseeing",
-        description: "Shimla sightseeing.",
+        day: "Day 2: SHIMLA – KUFRI – LOCAL S/S – SHIMLA",
+        description: "After fresh up proceed for Shimla sightseeing to cover: Kufri (It is one the best ski point in winters and in summers, it turns into a famous tourist picnic spot) Jakhu Temple (According to Mahabharata Myth Hanuman Ji rested while Searching for Sanjivini Plant), Vice regal lodge which was once the residence of British Viceroy of India which is now converted to advance study for its academic use). In Evening Exploration on your own: The Mall, Scandal Point, Ridge, Lakkar Bazaar, and Christ Church and then have your overnight stay at Hotel.",
       },
       {
-        day: "DAY 3: Travel to Manali",
-        description: "Travel to Manali.",
+        day: "Day 3: SHIMLA – KULLU – MANALI (260 KMS/7-8 hrs)",
+        description: "Today morning after breakfast check out from the hotel and proceed towards Manali On the way to Manali, cross by Pandoh Dam, visit Hanogi Mata Temple and Vaishno Devi Temple. Reach Manali & check into the hotel. Overnight stay at hotel.",
       },
       {
-        day: "DAY 4: Explore Manali",
-        description: "Local attractions in Manali.",
+        day: "Day 4: MANALI LOCAL CITY TOUR (3 - 4 HRS)",
+        description: "After fresh up, proceed to half day city tour of Manali which includes- Hadimba Devi Temple (This temple constructed in 1553 A.D is Dedicated to Himachal’s Most Significant Deity Hadimba Mata), Vashisht Hot springs (Dedicated to Vashist Muni & well known for its hot Curable water and Religious). Evening you will be free to explore the Mall Road & IBEX Market of Manali, Overnight at hotel.",
       },
       {
-        day: "DAY 5: Visit Dharamshala",
-        description: "Visit Dharamshala.",
+        day: "Day 5: Manali – Solang Valley (14 Kms) or Rohtang Pass Up to Barrier Point",
+        description: "Today morning after breakfast have excursion trip to Solang Valley where you can admire the enchanting sights of the surroundings and can enjoy various thrilling adventure activities by own cost. As the winter approaches, the same Solang Valley takes a shape of a Snowy Blanket, thus forming a perfect vista for several snow activities. After enjoying the outing return to hotel for Overnight stay.",
       },
       {
-        day: "DAY 6: Travel to Dalhousie",
-        description: "Travel to Dalhousie.",
+        day: "Day 6: MANALI – DHARAMSHALA (240 KMS / 7-8 HRS)",
+        description: "After breakfast check out from the Hotel & drive to Dharamshala via Kullu (8-9hrs).On the way witness the spectacular sight of lofty mountains, meeting the clouds; lush green valleys and tranquil waterfalls enchanting you throughout your trip .Reach Dharamshala& transfer to the hotel. Overnight stay at Hotel.",
       },
       {
-        day: "DAY 7: Explore Dalhousie",
-        description: "Explore Dalhousie.",
+        day: "Day 7: DHARAMSHALA – LOCAL SIGHT SEEING - DALHOUSIE",
+        description: "After Breakfast, cover official residence of Dalai Lama, Mcleodganj, Bhagsunath temple and Dal Lake .Evening free to explore local market & Kotwai Bazaar. After that drive to Dalhousie check in hotel dinner and overnight stay.",
       },
       {
-        day: "DAY 8: Return to Chandigarh",
-        description: "Return to Chandigarh.",
+        day: "Day 8: DALHOUSIE – KHAJJIAR (22 KMS)",
+        description: "Today after breakfast, cover Khajjiar sightseeing. Khajjiar is a place where one can easily spend whole day by admiring the beauty of sparklingKhajjair Lake, wandering in 9 hole golf course or just sit and feel the peace.",
       },
       {
-        day: "DAY 9: Departure",
-        description: "Departure.",
-      },
+        day: "Day 09: Dalhousie to Delhi",
+        description: "After Breakfast check out from the hotel drive to Delhi, evening reach Delhi hotel dinner and overnight stay.",
+      },      
     ],
   },
 ];
