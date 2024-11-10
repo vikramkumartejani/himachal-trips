@@ -1,5 +1,8 @@
 import localFont from "next/font/local";
+import Script from 'next/script';
+
 import "./globals.css";
+import Navbar from "./components/Navbar";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -20,8 +23,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-          {/* Google Tag Manager */}
-          <Script
+        {/* Google Tag Manager */}
+        <Script
           id="google-tag-manager"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -33,9 +36,9 @@ export default function RootLayout({ children }) {
               })(window,document,'script','dataLayer','GTM-P37T4NB3');
             `,
           }}
-        />        
-      
-   {/* Google Analytics for multiple GAIDs */}
+        />
+
+        {/* Google Analytics for multiple GAIDs */}
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-3ZZS5W9MWY`}
@@ -43,7 +46,7 @@ export default function RootLayout({ children }) {
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-YM3TJ3M6G1`}
-        />        
+        />
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-63LBC7QJ2F`}
@@ -68,7 +71,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-    {/* Hotjar Tracking Code */}
+        {/* Hotjar Tracking Code */}
         <Script
           id="hotjar"
           strategy="afterInteractive"
@@ -85,7 +88,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-    {/* Microsoft Clarity Code */}
+        {/* Microsoft Clarity Code */}
         <Script
           id="clarity"
           strategy="afterInteractive"
@@ -99,7 +102,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-    {/* Meta Pixel Code */}
+        {/* Meta Pixel Code */}
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
@@ -125,8 +128,8 @@ export default function RootLayout({ children }) {
             style={{ display: 'none' }}
             src="https://www.facebook.com/tr?id=1255410015588930&ev=PageView&noscript=1"
           />
-        </noscript>                
-        <Navbar />
+        </noscript>
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>

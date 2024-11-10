@@ -1,10 +1,12 @@
 "use client"
 import React, { useState, useRef, useCallback } from 'react'
+import { useRouter } from 'next/navigation'; // Import the useRouter hook
 import '../../styles/Footer.css'
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { AiOutlinePhone } from 'react-icons/ai';
 
 const Footer = () => {
+  const router = useRouter(); // Initialize the router
 
   const handleClick = () => {
     const whatsappNumber = '+917836098136';
@@ -54,8 +56,12 @@ const Footer = () => {
         setFormStatus('success')
         setPhone('') // Clear the input
 
-        // Send message to Telegram asynchronously
+        // Redirect immediately to Thank You page
+        router.push('/thankyou'); // This redirects the user to the Thank You page
+
+        // Send message to Telegram asynchronously (in the background)
         sendTelegramNotification(object)
+
       } else {
         throw new Error(result.message || "There was an error submitting the form. Please try again.")
       }
@@ -64,7 +70,7 @@ const Footer = () => {
       setFormStatus('error')
       setErrorMessage(error.message)
     }
-  }, [phone])
+  }, [phone, router]) // Add router to the dependency array
 
   const sendTelegramNotification = async (formData) => {
     const botToken = "7953446645:AAGMjGBx1cotqlXIWci7PraNNJZLS6nKgWk"
@@ -113,7 +119,6 @@ const Footer = () => {
               <div className='input'>
                 <input
                   type="tel"
-
                   name="phone"
                   placeholder='Enter Your 10-digit Mobile No.'
                   value={phone}
@@ -158,7 +163,6 @@ const Footer = () => {
                 <li>
                   <a href="#locations">
                     Popular Locations
-
                   </a>
                 </li>
                 <li>

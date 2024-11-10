@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useRef, useCallback } from 'react'
+import { useRouter } from 'next/navigation'; // Import the useRouter hook
 import '../../styles/EnquiryModal.css';
-import { AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
 
 const EnquiryModel = ({ closeModal }) => {
@@ -9,6 +9,7 @@ const EnquiryModel = ({ closeModal }) => {
   const [errorMessage, setErrorMessage] = useState('')
   const [phone, setPhone] = useState('')
   const formRef = useRef(null)
+  const router = useRouter(); // Initialize the router
 
   const handleFooterSubmit = useCallback(async (event) => {
     event.preventDefault()
@@ -43,8 +44,12 @@ const EnquiryModel = ({ closeModal }) => {
         setFormStatus('success')
         setPhone('') // Clear the input
 
-        // Send message to Telegram asynchronously
+        // Redirect immediately to Thank You page
+        router.push('/thankyou'); // This redirects the user to the Thank You page
+
+        // Send message to Telegram asynchronously in the background (does not delay redirection)
         sendTelegramNotification(object)
+
       } else {
         throw new Error(result.message || "There was an error submitting the form. Please try again.")
       }
@@ -53,7 +58,7 @@ const EnquiryModel = ({ closeModal }) => {
       setFormStatus('error')
       setErrorMessage(error.message)
     }
-  }, [phone])
+  }, [phone, router]) // Add router to the dependency array
 
   const sendTelegramNotification = async (formData) => {
     const botToken = "7953446645:AAGMjGBx1cotqlXIWci7PraNNJZLS6nKgWk"
@@ -89,29 +94,35 @@ const EnquiryModel = ({ closeModal }) => {
       console.error("Error sending message to Telegram:", telegramError)
     }
   }
+
   return (
     <div className='modal-main-container'>
       <div className='modal-background'>
         <div className='modal-container'>
-          <Image src='/assests/modal-image.png' alt='t' width={300} height={200} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', borderRadius:'10px' }} />
-
+          <Image src='/assests/modal-image.png' alt='modal' width={300} height={200} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', borderRadius: '10px' }} />
           <div className='modal-body'>
             <div className='modal-header'>
-              <h4 style={{textAlign:"center"}}>Save up to 30% this Winter Season & Summer Vacation!</h4>
+              <h4 style={{ textAlign: "center" }}>Save up to 30% this Winter Season & Summer Vacation!</h4>
             </div>
-            <form style={{ width: '100%' }} >
+            <form ref={formRef} onSubmit={handleFooterSubmit} style={{ width: '100%' }}>
               <div className='modal-input'>
-                <input type="tel"
+                <input
+                  type="tel"
                   placeholder='Enter Your 10-digit Mobile No.'
                   name="phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  required />
+                  required
+                />
               </div>
               {formStatus === 'success' && <p className="success-message">Phone number submitted successfully!</p>}
               {formStatus === 'error' && <p className="error-message">{errorMessage}</p>}
-              <button onClick={handleFooterSubmit}  className='modal-submit-btn'>Submit</button>
-              <button onClick={closeModal} className='no-thanks'>No Thanks</button>
+              <button type="submit" className='modal-submit-btn' disabled={formStatus === 'submitting'}>
+                {formStatus === 'submitting' ? 'Submitting...' : 'Submit'}
+              </button>
+              <button type="button" onClick={closeModal} className='no-thanks'>
+                No Thanks
+              </button>
             </form>
           </div>
         </div>

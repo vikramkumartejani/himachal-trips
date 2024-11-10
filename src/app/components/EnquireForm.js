@@ -110,6 +110,38 @@ export default function EnquireForm() {
           <div className='form-info'>
             <h3>Himachal Tour Packages </h3>
             <p>SHIMLA | KULLU | MANALI | DHARAMSHALA | DALHOUSIE | KHAJIYAAR | SOLANG </p>
+            <div className="table-container">
+  <table className="tour-package-table">
+    <thead>
+      <tr>
+        <th>Packages</th>
+        <th>Prices</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Holiday in Manali & Shimla From Delhi (Free Value Pack) Packages</td>
+        <td>Rs 17839</td>
+      </tr>
+      <tr>
+        <td>Retreat to Shimla, Manali & Chandigarh Packages</td>
+        <td>Rs 21191</td>
+      </tr>
+      <tr>
+        <td>Holiday in Shimla & Manali from Delhi - Honeymoon Special Packages</td>
+        <td>Rs 43246</td>
+      </tr>
+      <tr>
+        <td>Mini Himachal - Shimla & Manali from Chandigarh Packages</td>
+        <td>Rs 1880</td>
+      </tr>
+      <tr>
+        <td>FREEBIE Inside! - Shimla, Manali & Chandigarh Retreat Packages</td>
+        <td>Rs 22568</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
           </div>
           <div className='main-form-container'>
             <div className='form-container-border card-border-wide'>
